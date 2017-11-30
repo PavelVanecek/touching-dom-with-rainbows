@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rainbows!</title>
+    <link rel="stylesheet" href="./rainbows.css">
+  </head>
+  <body>
+    <h1>Rainbows!</h1>
+    <form id="init">
+      <input type="number" value=100 min=0 step=1 name="count" required>
+      <input type="submit" value="Draw multiple rainbows">
+      <input id="reset" type="reset" value="Erase all">
+    </form>
+    <section>
+      <button id="add1-redraw">Add 1 by redrawing everything</button>
+      <button id="add1-insert">Add 1 by splicing</button>
+      <span id="timer"></span>
+    </section>
+    <p id="counter">There are no rainbows right now</p>
+    <article id="list"></article>
+    <script src="./rainbows.js"></script>
+  </body>
+</html>
